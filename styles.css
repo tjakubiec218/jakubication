@@ -8,6 +8,18 @@
 			--banner-background-color: #08192c;
 			--banner-text-color: #fa562a;
 		}
+		@media (min-width: 350px)
+			{
+				.site-header__title
+				{
+					margin-left: 3%;
+				}
+
+				.site_header__ytlink--container
+				{
+					margin-right: 1%;
+				}
+			}
 		.site-header
 		{
 			height: 15vh;
