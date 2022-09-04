@@ -30,6 +30,11 @@
 			align-items: center;
 			margin-right: 1%;
 		}
+		@font-face
+		{
+			font-family: "Times New Roman";
+			src: url("fonts/TimesNewRomanPSMT.woff") format("woff");
+		}
 
 		@media  (max-width: 375px)
 		{
