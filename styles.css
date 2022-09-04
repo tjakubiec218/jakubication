@@ -35,12 +35,17 @@
 		{
 			.site-header__title
 			{
-				margin-left: 15%;
+				margin-left: 3%;
 			}
 
 			.site_header__ytlink--container
 			{
 				margin-right: 3%;
+			}
+			
+			.site-header__title, .site_header__ytlink--container
+			{
+				font-family: "Times New Roman";
 			}
 		}
 
