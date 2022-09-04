@@ -3,23 +3,12 @@
 			margin: 0px;
 			padding: 0px;
 		}
+		
 		:root
 		{
 			--banner-background-color: #08192c;
 			--banner-text-color: #fa562a;
 		}
-		@media (max-width: 350px)
-			{
-				.site-header__title
-				{
-					margin-left: 3%;
-				}
-
-				.site_header__ytlink--container
-				{
-					margin-right: 1%;
-				}
-			}
 		.site-header
 		{
 			height: 15vh;
@@ -40,6 +29,19 @@
 			display: flex;
 			align-items: center;
 			margin-right: 1%;
+		}
+
+		@media  (max-width: 375px)
+		{
+			.site-header__title
+			{
+				margin-left: 3%;
+			}
+
+			.site_header__ytlink--container
+			{
+				margin-right: 3%;
+			}
 		}
 
 		.site-header__ytlink:hover, .site-header__ytlink:focus
