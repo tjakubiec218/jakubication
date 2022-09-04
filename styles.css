@@ -8,7 +8,7 @@
 			--banner-background-color: #08192c;
 			--banner-text-color: #fa562a;
 		}
-		@media (min-width: 350px)
+		@media (max-width: 350px)
 			{
 				.site-header__title
 				{
