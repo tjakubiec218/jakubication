@@ -8,6 +8,7 @@
 		{
 			--banner-background-color: #08192c;
 			--banner-text-color: #fa562a;
+			--banner-letter-spacing: 0.06em;
 		}
 		.site-header
 		{
@@ -66,6 +67,7 @@
 		.site-header__title, .site-header__ytlink
 		{
 			color: var(--banner-text-color);
+			letter-spacing: var(--banner-letter-spacing);
 		}
 		.site_header__ytlink--container, .site-header__title
 		{
