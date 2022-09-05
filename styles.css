@@ -31,10 +31,12 @@
 			align-items: center;
 			margin-right: 1%;
 		}
+
 		@font-face
 		{
 			font-family: "Times New Roman";
 			src: url("fonts/TimesNewRomanPSMT.woff") format("woff");
+
 		}
 
 		@media  (max-width: 375px)
@@ -48,10 +50,23 @@
 			{
 				margin-right: 3%;
 			}
-			
-			.site-header__title, .site_header__ytlink--container
+
+			body .blog-menu
 			{
-				font-family: "Times New Roman";
+				height: 100%;
+			}
+			.menu-list
+			{
+				flex-direction: column;
+			}
+
+			body li:nth-child(odd)
+			{
+				border-top: 1px solid black;
+				border-bottom: 1px solid black;
+				border-left: none;
+				border-right: none;
+				
 			}
 		}
 
@@ -73,4 +88,46 @@
 		{
 			margin-top: 0px;
 			margin-bottom: 0px;
+		}
+		.blog-menu
+		{
+			background-color: var(--banner-background-color);
+			height: 10vh;
+			border-top: 1px solid black;
+		}
+		.menu-list
+		{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			list-style: none;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			padding: 0px
+		}
+		.blog-menu > .menu-list > li
+		{
+			height: 10vh;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+
+		li:nth-child(odd)
+		{
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+		}
+
+		.blog-category
+		{
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 1.5em;
+			letter-spacing: var(--banner-letter-spacing);
+		}
+		.blog-category:hover, .blog-category:focus
+		{
+			text-decoration: underline;
 		}
