@@ -60,7 +60,7 @@
 				flex-direction: column;
 			}
 
-			body li:nth-child(odd)
+			body .menu-list li:nth-child(odd)
 			{
 
 				border-top: 1px solid black;
