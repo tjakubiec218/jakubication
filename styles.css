@@ -1,4 +1,4 @@
-		body
+		 body
 		{
 			margin: 0px;
 			padding: 0px;
@@ -9,6 +9,8 @@
 			--banner-background-color: #08192c;
 			--banner-text-color: #fa562a;
 			--banner-letter-spacing: 0.06em;
+			--blog-menu-background-color: #2251dd;
+			--about-me-background-color: #4169e1;
 		}
 		.site-header
 		{
@@ -18,25 +20,23 @@
 			display: flex;
 			justify-content: space-between;
 		}
-		.site-header__title
+		.site-header__title, .site_header__ytlink--container
 		{
 			display: flex;
 			align-items: center;
+		}
+		.site-header__title
+		{
 			margin-left: 1%;
-
 		}
 		.site_header__ytlink--container
 		{
-			display: flex;
-			align-items: center;
 			margin-right: 1%;
 		}
-
 		@font-face
 		{
 			font-family: "Times New Roman";
 			src: url("fonts/TimesNewRomanPSMT.woff") format("woff");
-
 		}
 
 		@media  (max-width: 375px)
@@ -62,6 +62,7 @@
 
 			body li:nth-child(odd)
 			{
+
 				border-top: 1px solid black;
 				border-bottom: 1px solid black;
 				border-left: none;
@@ -91,9 +92,8 @@
 		}
 		.blog-menu
 		{
-			background-color: var(--banner-background-color);
+			background-color: var(--blog-menu-background-color);
 			height: 10vh;
-			border-top: 1px solid black;
 		}
 		.menu-list
 		{
@@ -114,7 +114,7 @@
 			width: 100%;
 		}
 
-		li:nth-child(odd)
+		.menu-list li:nth-child(odd)
 		{
 			border-left: 1px solid black;
 			border-right: 1px solid black;
@@ -130,4 +130,41 @@
 		.blog-category:hover, .blog-category:focus
 		{
 			text-decoration: underline;
+		}
+		.about-me
+		{
+			background-color: var(--about-me-background-color);
+			height: 65vh;
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+		.about-me > h2
+		{
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.site-footer
+		{
+			background-color: var(--banner-background-color);
+			color: var(--banner-text-color);
+			height: 10vh;
+			padding-left: 16px;
+			padding-right: 16px;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		.about-me > span, .about-me  li
+		{
+			font-size: 19pt;
+		}
+		.about-me > ul, .about-me > ul > li > ul
+		{
+			list-style: none;
+		}
+		.about-me__explainer-text
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
