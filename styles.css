@@ -15,7 +15,9 @@
 		.site-header
 		{
 			height: 15vh;
-			width: 100%;
+			width: calc(100% - 32px);
+			padding-left: 16px;
+			padding-right: 16px;
 			background-color: var(--banner-background-color);
 			display: flex;
 			justify-content: space-between;
@@ -25,14 +27,6 @@
 			display: flex;
 			align-items: center;
 		}
-		.site-header__title
-		{
-			margin-left: 1%;
-		}
-		.site_header__ytlink--container
-		{
-			margin-right: 1%;
-		}
 		@font-face
 		{
 			font-family: "Times New Roman";
@@ -41,16 +35,6 @@
 
 		@media  (max-width: 375px)
 		{
-			.site-header__title
-			{
-				margin-left: 7%;
-			}
-
-			.site_header__ytlink--container
-			{
-				margin-right: 7%;
-			}
-
 			body .blog-menu
 			{
 				height: 100%;
