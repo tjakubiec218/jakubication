@@ -3,7 +3,6 @@
 			margin: 0px;
 			padding: 0px;
 		}
-		
 		:root
 		{
 			--banner-background-color: #08192c;
@@ -11,6 +10,11 @@
 			--banner-letter-spacing: 0.06em;
 			--blog-menu-background-color: #2251dd;
 			--about-me-background-color: #4169e1;
+		}
+		@font-face
+		{
+			font-family: "Times New Roman";
+			src: url("fonts/TimesNewRomanPSMT.woff") format("woff");
 		}
 		.site-header
 		{
@@ -26,11 +30,6 @@
 		{
 			display: flex;
 			align-items: center;
-		}
-		@font-face
-		{
-			font-family: "Times New Roman";
-			src: url("fonts/TimesNewRomanPSMT.woff") format("woff");
 		}
 
 		@media  (max-width: 375px)
@@ -127,17 +126,6 @@
 			margin-top: 0px;
 			margin-bottom: 0px;
 		}
-		.site-footer
-		{
-			background-color: var(--banner-background-color);
-			color: var(--banner-text-color);
-			height: 10vh;
-			padding-left: 16px;
-			padding-right: 16px;
-			display: flex;
-			justify-content: flex-end;
-		}
-
 		.about-me > span, .about-me  li
 		{
 			font-size: 19pt;
@@ -151,4 +139,14 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+		.site-footer
+		{
+			background-color: var(--banner-background-color);
+			color: var(--banner-text-color);
+			height: 10vh;
+			padding-left: 16px;
+			padding-right: 16px;
+			display: flex;
+			justify-content: flex-end;
 		}
