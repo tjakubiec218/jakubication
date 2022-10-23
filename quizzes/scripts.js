@@ -50,17 +50,23 @@ function make_button(index, optRef)
 
 function decide_correct()
 {
+	const buttons = document.querySelector("#options");
+	if(buttons.dataset.animating == "true")
+	{
+		return;
+	}
 	const buttonText = this.innerText;
 	const answer = theQuestions[title][question_number].answer;
-	//If correct make button green for 2 seconds
-	//If incorrect, make button red for 2 seconds
 
 	this.addEventListener("animationend", () => 
 	{
 		question_number += 1;
 		document.querySelector("#correct").innerText = `${correct}/${question_number}`;
+		buttons.dataset.animating = false;
 		progress();
 	})
+
+	buttons.dataset.animating = true;
 
 	if(buttonText == answer)
 	{
