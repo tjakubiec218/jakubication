@@ -114,12 +114,47 @@
 		{
 			text-decoration: underline;
 		}
+		header + main
+		{
+			height: 75vh;
+			overflow-y: auto;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+		}
 		.about-me
 		{
-			background-color: var(--about-me-background-color);
 			height: 65vh;
+		}
+		main
+		{
+			background-color: var(--about-me-background-color);
 			padding-left: 16px;
 			padding-right: 16px;
+		}
+		.series-list
+		{
+			list-style: none;
+			padding-left: 5%;
+			padding-right: 5%;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			background-color: var(--banner-background-color);
+		}
+		.series-list > li
+		{
+			text-align: center;
+		}
+		.series-list > li > a
+		{
+			text-decoration: none;
+			color: var(--banner-text-color);
+			font-size: 19pt;
+		}
+		.series-list > li > a:hover, .series-list > li > a:active
+		{
+			text-decoration: underline;
+			background-color: var(--blog-menu-background-color);
 		}
 		.about-me > h2
 		{
@@ -150,3 +185,78 @@
 			display: flex;
 			justify-content: flex-end;
 		}
+
+		    .quiz-header
+			{
+				font-size: 2em;
+				font-weight: bold;
+				text-align: center;
+			}
+			.quiz
+			{
+				height: 75vh;
+				overflow-y: auto;
+				display: block;
+			}
+			#status
+			{
+				display: flex;
+				justify-content: center;
+			}
+			#question
+			{
+				text-align: center;
+				margin-bottom: 0px;
+			}
+			#options
+			{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.option
+			{
+				font-size: 18px;
+				padding: 15px;
+				margin: 10px;
+				background-color: #e7e7e7;
+				border: 1px solid black;
+				width: 12%;
+			}
+
+			.correct
+			{
+				animation-name: correct;
+				animation-duration: 0.5s;
+			}
+
+			.wrong
+			{
+				animation-name: wrong;
+				animation-duration: 0.5s;
+			}
+
+			@keyframes correct
+			{
+				from 
+				{
+					background-color: #e7e7e7;
+				}
+				to
+				{
+					background-color: green;
+				}
+			}
+
+			@keyframes wrong
+			{
+				from 
+				{
+					background-color: #e7e7e7;
+				}
+				to
+				{
+					background-color: red;
+				}
+			}
