@@ -222,7 +222,8 @@
 				margin: 10px;
 				background-color: #e7e7e7;
 				border: 1px solid black;
-				width: 12%;
+				max-width: fit-content;
+				min-width: 12%;
 			}
 
 			.correct
