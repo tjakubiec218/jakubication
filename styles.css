@@ -183,9 +183,30 @@
 			padding-left: 16px;
 			padding-right: 16px;
 			display: flex;
-			justify-content: flex-end;
+			justify-content: space-around;
 		}
+		.site-footer > a:hover, .site-footer > a:visited, .site-footer > a:active, .site-footer > a
+		{
+			text-decoration: none;
+			color: var(--banner-text-color);
+		}
+		.site-footer > a:hover, .site-footer > a:active
+		{
+			text-decoration: underline;
+		}
+		.legal
+		{
+			background-color: var(--about-me-background-color)
+		}
+		.legal > h1, .legal > h2 
+		{
+			margin-top: 0px;
 
+		}
+		.legal > p, .legal > h1, .legal > h2
+		{
+			padding-left: 5px;
+		}
 		    .quiz-header
 			{
 				font-size: 2em;
