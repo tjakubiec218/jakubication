@@ -28,5 +28,32 @@ questions = {"Straight Lines": [
 	{"question": "True or False, mutability is tied to primitive types?",
 				"options": ["True", "False"],
 				"answer": "False"},
-					  ]
+					  ],
+			"Conditionals": [
+	{"question" : "True or False, A statement can be a single line or span multiple lines?",
+	              "options": ["True", "False"],
+	              "answer": "True"},
+	{"question" : "Determine which part of the following is a statment and which part is an expression: x = 2 + 2",
+	              "options": ["Statement: x = 2 + 2\nExpression: 2 + 2", "Expression: x = 2 + 2\nStatement: 2 + 2"],
+	              "answer": "Statement: x = 2 + 2\nExpression: 2 + 2"},
+	{"question" : "Which of the following conditional statements can you put statements between?",
+	              "options": ["if's", "if/else if ladders", "if/else if/else ladders"],
+	              "answer": "if's"},
+	{"question" : "When's the only time you should stack strictly if's?",
+	              "options": ["When the outcome of one if doesn't influence the outcome of further if's",
+	                          "It's always a good time to do this"],
+	              "answer": "When the outcome of one if doesn't influence the outcome of further if's"},
+	{"question" : "With regards to short circuiting and the 'and' logical operator, when is the second boolean value not evaluated?",
+	              "options": ["The first value is true",
+	                          "The first value is false"],
+	              "answer": "The first value is false"},
+	{"question" : "With regards to short circuiting and the 'or' logical operator, when is the second boolean value not evaluated?",
+	              "options": ["The first value is true",
+	                          "The first value is false"],
+	              "answer": "The first value is true"},
+	{"question" : "Given De Morgan's Laws, what would the following evaluate to: not(A and B)",
+	              "options": ["not(A) or not(B)",
+	                          "not(A) and not(B)"],
+	              "answer": "not(A) or not(B)"}
+ 					  ]
 			}
