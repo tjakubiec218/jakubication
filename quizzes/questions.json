@@ -55,5 +55,31 @@ questions = {"Straight Lines": [
 	              "options": ["not(A) or not(B)",
 	                          "not(A) and not(B)"],
 	              "answer": "not(A) or not(B)"}
- 					  ]
+ 					  ],
+			"Loops": [
+	{"question" : "Everything a loop does in a single run through can be called one ___ of the loop?",
+	              "options": ["iteration", "boolean", "conditional", "round"],
+	              "answer": "iteration"},
+	{"question" : "What makes either type of loop stop?",
+	              "options": ["The condition evaluating to false", "The condition evaluating to true"],
+	              "answer": "The condition evaluating to false"},
+	{"question" : "What keys do you press to stop an infinite loop?",
+	              "options": ["CTRL-A", "CTRL-B", "CTRL-C", "CTRL-D"],
+	              "answer": "CTRL-C"},
+	{"question" : "Which statment exits a loop early?",
+	              "options": ["continue", "break"],
+	              "answer": "break"},
+	{"question" : "Which statement skips to the next run through of a loop?",
+	              "options": ["continue", "break"],
+	              "answer": "continue"},
+	{"question" : "Given some outer loop has x run throughs and some inner loop has y run throughs how many times would a statement in the inner loop be executed?",
+	              "options": ["x * y", "x + y", "x - y", "x / y"],
+	              "answer": "x * y"},
+	{"question" : "True or False: while loops are best used for a known # of iterations",
+	              "options": ["true", "false"],
+	              "answer": "false"},
+	{"question" : "True or False: for loops are best used for a known # of iterations",
+				  "options": ["true", "false"],
+				  "answer": "true"}
+ 					  ],
 			}
