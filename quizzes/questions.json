@@ -27,7 +27,7 @@ questions = {"Straight Lines": [
 				"answer": "1 / 3"},
 	{"question": "True or False, mutability is tied to primitive types?",
 				"options": ["True", "False"],
-				"answer": "False"},
+				"answer": "False"}
 					  ],
 			"Conditionals": [
 	{"question" : "True or False, A statement can be a single line or span multiple lines?",
