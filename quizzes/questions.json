@@ -110,5 +110,31 @@ questions = {"Straight Lines": [
 	{"question" : "What question does '==' ask for reference types?",
 				  "options": ["Are the values equal?", "Are the memory addresses they hold equal?"],
 				  "answer": "Are the memory addresses they hold equal?"}		
+ 					  ],
+			"Functions": [
+	{"question" : "What is the difference between parameters and arguments?",
+	              "options": ["parameter - Name of input when define function\nargument - Name of input when you call function",
+	              	"parameter - Name of input when call function\nargument - Name of input when you define function"],
+	              "answer": "parameter - Name of input when define function\nargument - Name of input when you call function"},
+	{"question" : "When should you use a function?",
+	              "options": ["When you're current bit of code is getting too long",
+	                          "You're writing the same bit of code over and over again"],
+	              "answer": "You're writing the same bit of code over and over again"},
+	{"question" : "What is a function that returns no value called?",
+	              "options": ["void", "conjunction", "empty", "invalid"],
+	              "answer": "void"},
+	{"question" : "True or False: a function can return more than one value?",
+	              "options": ["true", "false"],
+	              "answer": "false"},
+	{"question" : "Pass by value is when _______ are passed to the function",
+	              "options": ["copies of values", "memory addresses of values"],
+	              "answer": "copies of values"},
+	{"question" : "Pass by reference is when _______ are passed to the function",
+	              "options": ["copies of values", "memory addresses of values"],
+	              "answer": "memory addresses of values"},
+	{"question" : "True or False: Using the print function causes a side effect",
+				  "options": ["true", "false"],
+				  "answer": "true"}
  					  ]
+
 			}
