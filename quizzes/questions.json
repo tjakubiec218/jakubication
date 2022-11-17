@@ -135,6 +135,16 @@ questions = {"Straight Lines": [
 	{"question" : "True or False: Using the print function causes a side effect",
 				  "options": ["true", "false"],
 				  "answer": "true"}
- 					  ]
-
+ 					  ],
+			"Stacks & Recursion": [
+	{"question" : "Which acronym best describes how elements are stored in a stack?",
+	              "options": ["LIFO", "FIFO"],
+	              "answer": "LIFO"},
+	{"question" : "Is push or pop the operation that removes a value from the stack?",
+	              "options": ["push", "pop"],
+	              "answer": "pop"},
+	{"question" : "In factorial, is factorial(1) a recursive or base case?",
+	              "options": ["recursive", "base"],
+	              "answer": "base"}            
+	          ]
 			}
