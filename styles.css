@@ -3,6 +3,159 @@
 			margin: 0px;
 			padding: 0px;
 		}
+		.ascii-menu
+		{
+			
+			width: 50%;
+			margin: 5px;
+
+			display: inline-block;
+  			border: none;
+  			background-color: var(--blog-menu-background-color);
+  			color: white;
+  			padding: 10px 20px;
+  			font-size: 2em;
+  			cursor: pointer;
+  			border-radius: 5px;
+  			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  			transition: all 0.3s ease-in-out;
+		}
+
+		.ascii-menu:hover 
+		{
+  			background-color: hsl(225, 73.3%, 35%);
+  			box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+		}
+		#buttons
+		{
+			display: flex;
+			background-color: var(--banner-background-color);
+			justify-content: center;
+		}
+		.char
+		{
+			color: #ff0000;
+			font-weight: bold;
+		}
+		
+
+		.centered
+		{
+			text-align: center;
+		}
+
+		.group2
+		{
+			display: none;
+		}
+		.group3
+		{
+			display: none;
+		}
+		.group4
+		{
+			display: none;
+		}
+		@media (max-width: 1150px)
+		{
+			#table-holder
+			{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding: 0px;
+			}
+			main > table
+			{
+				width: 100%;
+			}
+			.chr
+			{
+				width: 81%;
+			}
+			.not-chr
+			{
+				width: 19%;
+			}
+			.group2 > colgroup > .chr, .group3 > colgroup > .chr, .group4 > colgroup > .chr
+			{
+				width: 50%;
+			}
+			.group2 > colgroup > .not-chr, .group3 > colgroup > .not-chr, .group4 > colgroup > .not-chr
+			{
+				width: 50%;
+			}
+		}
+
+		@media (min-width: 1151px)
+		{
+			#table-holder
+			{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			padding: 0px;
+			}
+			.chr
+			{
+				width: 75%;
+			}
+			.not-chr
+			{
+				width: 25%;
+			}
+
+			.group2 > colgroup > .chr, .group3 > colgroup > .chr, .group4 > colgroup > .chr
+			{
+				width: 70%;
+			}
+			.group2 > colgroup > .not-chr, .group3 > colgroup > .not-chr, .group4 > colgroup > .not-chr
+			{
+				width: 30%;
+			}
+		}
+		
+
+
+
+		 /* Define the style for the table */
+  		table 
+  		{
+    		border-right: 5px solid var(--banner-background-color);
+    		width: 33.3%;
+    		height: 100%;
+    		table-layout: fixed;
+ 		}
+ 		
+ 		table > tbody > tr
+ 		{
+ 			height: calc(100% / 12);
+ 			width: calc(100% / 3);
+ 			overflow: hidden;
+ 			white-space: nowrap;
+ 		}
+
+ 		table > tbody > tr > td
+ 		{
+ 			font-size: 1.00em;
+ 			text-align: center;	
+ 			overflow: hidden;
+ 		}
+
+  		/* Define the style for the table cells */
+  		td, th 
+  		{
+  			background-color: #dddddd;
+    		border: 1px solid #dddddd;
+    		text-align: left;
+    		padding: 8px;
+  		}
+
+  		/* Define the style for the table header cells */
+  		th 
+  		{
+    		font-size: 1.2em;
+  		}
 		:root
 		{
 			--banner-background-color: #08192c;
